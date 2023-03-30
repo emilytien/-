@@ -1,0 +1,30 @@
+// color
+
+$white: #ffffff;
+$mainGreen: #3f5d45;
+$deepGreen: #2c4832;
+$lightGreen: #eaf0ed;
+$yellow: #ffe180;
+
+// font-size
+$mainSize: 16px;
+
+// RWD
+
+@mixin mini-mobile {
+  @media screen and (max-width: 281px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media screen and (max-width: 911px) {
+    @content;
+  }
+}

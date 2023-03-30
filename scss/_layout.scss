@@ -1,0 +1,198 @@
+header {
+  margin: 30px 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @include mobile {
+    margin: 30px 30px;
+  }
+}
+
+.burger {
+  @include mobile {
+    width: 100%;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true");
+  }
+}
+.logo {
+  width: 100%;
+  height: 40px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  @include mobile {
+    height: 18px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg");
+    background-position: center center;
+  }
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.navBarInside {
+  display: flex;
+  position: absolute;
+  right: 80px;
+  a {
+    text-decoration: none;
+    font-size: $mainSize;
+    color: $mainGreen;
+    padding-left: 60px;
+  }
+  @include pad {
+    right: 50px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.cart {
+  width: 100%;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/143d37deb8a19ecd8eccc806ae26acbb90fe4338/student-week1/shopping_cart.png");
+}
+
+.contact-logo {
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-light.svg");
+}
+
+.contact {
+  height: 116px;
+  background: $mainGreen;
+  color: $lightGreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 122px;
+  @include pad {
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+}
+.contact-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div:nth-child(2) {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.contact-input {
+  display: flex;
+  align-items: center;
+}
+
+.email-logo {
+  width: 64px;
+  height: 56px;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true");
+}
+
+.input {
+  width: 252px;
+  height: 54px;
+  font-size: 24px;
+  outline-style: none;
+  border: 0 none transparent;
+  @include mobile {
+    width: 200px;
+  }
+  @include mini-mobile {
+    width: 130px;
+  }
+}
+.submit {
+  width: 64px;
+  height: 56px;
+  background-color: $yellow;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true");
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  //   height: 341px;
+  background-color: $lightGreen;
+  color: $mainGreen;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 122px;
+  @include mobile {
+    padding: 39px 30px 30px 30px;
+    flex-direction: column;
+  }
+}
+
+.footer-logo {
+  width: 171px;
+  height: 27px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logotype-sm-dark.svg");
+  margin-bottom: 115.5px;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+.icon {
+  display: flex;
+  margin-top: 30px;
+  @include mobile {
+    margin-bottom: 23px;
+  }
+}
+
+.line {
+  width: 32px;
+  height: 32px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-line%40.svg");
+}
+.fb {
+  width: 32px;
+  height: 32px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/ic-facebook.svg");
+  margin-left: 8px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div:nth-child(1) {
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  @include mobile {
+    div:nth-child(1) {
+      display: none;
+    }
+  }
+}
