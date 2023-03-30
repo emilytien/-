@@ -166,12 +166,9 @@ section {
   box-sizing: border-box;
   border-right: 1px solid $lightGreen;
   @include pad {
-    font-size: 20px;
-  }
-  @include mobile {
     font-size: 18px;
   }
-  @include mini-mobile {
+  @include mobile {
     font-size: 16px;
   }
 }

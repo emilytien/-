@@ -120,6 +120,9 @@ header {
   font-size: 24px;
   outline-style: none;
   border: 0 none transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  padding: 0;
   @include mobile {
     width: 200px;
   }
@@ -137,6 +140,9 @@ header {
   outline-style: none;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  padding: 0;
 }
 
 .footer-bottom {
