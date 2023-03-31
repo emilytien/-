@@ -119,10 +119,7 @@ header {
   height: 54px;
   font-size: 24px;
   outline-style: none;
-  border: 0 none transparent;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  padding: 0;
+  // border: 0 none transparent;
   @include mobile {
     width: 200px;
   }
@@ -138,11 +135,8 @@ header {
   background-position: center center;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true");
   outline-style: none;
-  border: none;
+  // border: none;
   cursor: pointer;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  padding: 0;
 }
 
 .footer-bottom {
